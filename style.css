@@ -2,3 +2,19 @@ html {
     background-color: #FFF8E7;
     color:#004225;
 }
+#name {
+    font-family: "Noto Serif", serif;
+    font-size: 40px;
+}
+
+#ipa{
+    font-family: "Noto Serif", serif;
+    font-size: 30px;
+}
+#time{
+    font-family: "Noto Serif", serif;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: lightgray;
+}
