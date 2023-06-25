@@ -1,12 +1,16 @@
 html {
     background-color: #FFF8E7;
     color:#004225;
+    font-family: "Noto Serif", serif;
 }
 #name {
     font-family: "Noto Serif", serif;
     font-size: 40px;
 }
 
+#email{
+    color: inherit;
+}
 #ipa{
     font-family: "Noto Serif", serif;
     font-size: 30px;
