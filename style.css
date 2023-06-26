@@ -22,3 +22,7 @@ html {
     left: 0;
     background-color: lightgray;
 }
+#t{
+    text-decoration: none;
+    color: inherit;
+}
