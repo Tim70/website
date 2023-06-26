@@ -2,6 +2,7 @@ html {
     background-color: #FFF8E7;
     color:#004225;
     font-family: "Noto Serif", serif;
+    animation: 0.5s clearin;
 }
 #name {
     font-family: "Noto Serif", serif;
@@ -25,4 +26,13 @@ html {
 #t{
     text-decoration: none;
     color: inherit;
+}
+
+@keyframes clearin {
+    from {
+        filter: blur(20px);
+    }
+    to {
+        filter: blur(0);
+    }
 }
