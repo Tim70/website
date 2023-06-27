@@ -3,6 +3,9 @@ html {
     color:#004225;
     font-family: "Noto Serif", serif;
     animation: 0.5s clearin;
+    width: 1000px;
+    max-width: 100%;
+    margin: auto
 }
 #name {
     font-family: "Noto Serif", serif;
