@@ -1,17 +1,16 @@
-
-function getTime(weatherText){
+let weatherText = "";
+function getTime(){
     let x = new Date();
     let marquee = document.getElementById("time");
-    marquee.innerText = "The time is " + x.toLocaleTimeString() + "|"  + weatherText;
+    marquee.innerText = "The time is " + x.toLocaleTimeString() + "|" + weatherText;
 }
 
 async function weather() {
     const response = await fetch("https://wttr.in/?format=3&m");
     return await response.text();
   }
-
-weather().then( (weatherText) => {
-    setInterval(getTime(weatherText), 1000);
+weather().then( (x) => {
+    weatherText= x;
 });
 
 
@@ -21,3 +20,4 @@ window.addEventListener('offline', () => {
 window.addEventListener("online", () => {
     document.body.parentElement.classList.remove("offline");
 });
+setInterval(getTime, 1000);
