@@ -1,4 +1,5 @@
 let weatherText = "";
+const observer = new MutationObserver(webRingImage);
 function getTime(){
     let x = new Date();
     let marquee = document.getElementById("time");
@@ -26,7 +27,6 @@ function webRingImage(){
     observer.disconnect();
 }
 function createObserver(){
-    const observer = new MutationObserver(webRingImage);
     observer.observe(document.getElementById("umaring"),{childList:true});
     console.log("lies");
 }
