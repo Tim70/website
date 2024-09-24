@@ -28,5 +28,4 @@ function webRingImage(){
 }
 function createObserver(){
     observer.observe(document.getElementById("umaring"),{childList:true});
-    console.log("lies");
 }
