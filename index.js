@@ -21,3 +21,12 @@ window.addEventListener("online", () => {
     document.body.parentElement.classList.remove("offline");
 });
 setInterval(getTime, 1000);
+function webRingImage(){
+    document.getElementsByTagName("a")[7].innerHTML='<img src="https://github.com/umacabal/umaring/raw/main/umass.png">';
+    observer.disconnect();
+}
+function createObserver(){
+    const observer = new MutationObserver(webRingImage);
+    observer.observe(document.getElementById("umaring"),{childList:true});
+    console.log("lies");
+}
