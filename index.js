@@ -13,8 +13,15 @@ async function weather() {
 weather().then( (x) => {
     weatherText= x;
 });
-
-
+// Beverage randomizer
+function bevSelect(){
+    let beverages = [["yuenyeung","https://en.wikipedia.org/wiki/Yuenyeung"], ["london fog", "https://en.wikipedia.org/wiki/London_fog_(drink)"], ["cortado", "https://en.wikipedia.org/wiki/Cortado"]];
+    let beverage = beverages[Math.floor(Math.random() * beverages.length)];
+    let beverageElement = document.getElementById("bev");
+    beverageElement.innerText = beverage[0];
+    beverageElement.setAttribute("href",beverage[1]);
+}
+window.onload = bevSelect;
 window.addEventListener('offline', () => {
     document.body.parentElement.classList.add("offline");
 });
