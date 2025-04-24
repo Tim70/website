@@ -44,3 +44,19 @@ html {
         filter: blur(0);
     }
 }
+.profile-container {
+    display: flex;
+    align-items: flex-start;
+    gap: 2rem; /* spacing between text and image */
+  }
+  
+  .profile-text {
+    flex: 1;
+  }
+  
+  .profile-photo {
+    max-width: 150px; /* or whatever suits your design */
+    height: auto;
+    border-radius: 8px; /* optional: rounded corners */
+  }
+  
