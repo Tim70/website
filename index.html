@@ -25,9 +25,18 @@
     </div>
     <p>Hi! I'm a master's student at UMass Amherst studying computer science. Previously, I was an undergraduate studying computer science and linguistics. Currently, I am a course grader for CS 611: Advanced Algorithms, the primary graduate-level algorithms course at UMass. My academic interests currently center around algorithms, particularly those with the flavor of algorithmic game theory/mechanism design. I am broadly interested in the intersection of computing and society. I helped out at the <a class="link" href="https://publicinfrastructure.org/">Initative for Digital Public Infrastructure</a>. I was previously an undergraduate research assistant at the <a class="link" href="https://blogs.umass.edu/jkingstn/phonetics-laboratory/">UMass Amherst Phonetics Lab</a>. </p>
     <p>On the personal side my interests include a wide variety of things such as tennis, travel, and beverages of all sorts (such as <a class="link" id="bev" href=""></a>). Recently, I have become really interested in films (expect a blog post about it soon!). I listen to most genres of music, some of my favorite being jazz, hip-hop, and rock.</p>
-    <div id="umaring"></div>
-    <!-- <script id="umaring_js" src="https://umaring.github.io/timafei.js" onload="createObserver()"></script> -->
-    <script src="https://umaring.github.io/timafei.js"></script>
+    <div class="webring">
+        <div id="umaring"></div>
+        <script>
+          (function() {
+            var s = document.createElement('script');
+            s.id = 'umaring_js';
+            s.src = 'https://umaring.github.io/timafei.js';
+            document.getElementById('umaring').parentNode.appendChild(s);
+            createObserver()
+          })();
+        </script>
+      </div>
     <marquee id="time">.</marquee>
 </body>
 </html>

@@ -1,6 +1,6 @@
 //if the JS that follows seem bad, no. It is simply hand-crafted artisan non-GMO organic JS
 let weatherText = "";
-// const observer = new MutationObserver(webRingImage);
+const observer = new MutationObserver(webRingImage);
 function getTime(){
     let x = new Date();
     let marquee = document.getElementById("time");
