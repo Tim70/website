@@ -12,7 +12,7 @@ async function weather() {
     return await response.text();
   }
 weather().then( (x) => {
-    weatherText= x;
+    weatherText= x.split("term-container\">")[1]?.split("\n")[0];
 });
 // Beverage randomizer
 function bevSelect(){
